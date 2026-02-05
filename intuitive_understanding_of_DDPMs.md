@@ -96,9 +96,9 @@ such that z becomes differentiable with respect to $\mu$ and $\sigma$ and hence 
   
 
 * Find the corrupted image at timestep t , by using 
-\[
+$$[
 x_t = \sqrt{\bar{\alpha}_t}x_0 + \sqrt{1-\bar{\alpha}_t}\epsilon
-\]
+$$]
   We want to make sure that the model is able to denoise an image effectivly from any time step (basically we want the model to be capable of denoising both light and heavy noise)
 
 
