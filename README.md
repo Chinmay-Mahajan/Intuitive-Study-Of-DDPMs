@@ -5,3 +5,6 @@ However , alpha_bar in the image is defined a little differently (I have also in
 
 I would be making changes to the repo , as I learn more. 
 
+The latex error was corrected
+
+
