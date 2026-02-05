@@ -9,6 +9,8 @@
 It does this by gradually ***corrupting*** an image by adding **gaussian noise** to it. Over many timesteps , the image now losses all the information it once carried with it (things like , what it is? , where is it? etc.). What remains is a pure gaussian noise with mean = 0 and standard deviation = $\I$ . The model then is trained to predict what noise was added at each timestep and reverse the change. After many training runs the model , in a way learns to walk towards a clean image from pure noise. 
 
 A demonstration of the forward diffusion process 
+
+
 ![gif1](data/forward_diffusion.gif)
 
 ---
@@ -32,6 +34,8 @@ A demonstration of Brownian Motion:
 
 
 Strictly speaking, reversing diffusion exactly is impossible because the process destroys information. But we can train a model to learn the reverse transition probabilities, i.e., the most likely direction that converts noisy data back into clean data step by step.
+
+---
 
 # Detailed Working :
 
@@ -110,6 +114,7 @@ $$]
 
 Maximising the elbo leads to minimising the Mean Sqaured Error between the true noise added and the predicted noise ($\epsilon_{\theta}$) estimate given by the model.
 
+---
 
 # Some generated Images
 
