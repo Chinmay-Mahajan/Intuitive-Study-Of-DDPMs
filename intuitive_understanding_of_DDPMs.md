@@ -41,7 +41,9 @@ Strictly speaking, reversing diffusion exactly is impossible because the process
 Start with a clean image , x0 at each timestep we add gaussian noise epsilon to the image . Here is how the image is transformed at the timestep t from t=0
 $$
 \alpha_t = 1-\beta_t
-\qquad
+$$
+
+$$
 \bar{\alpha}_t = \prod_{k=1}^t \alpha_k
 $$
 
