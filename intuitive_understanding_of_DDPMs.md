@@ -6,7 +6,7 @@
 **Denoising Diffusion Probabilistic Models (DDPMs)** are models that deal with generation of new data from noise (for examples , if trained on images of handwritten digits it can be used to generate entirely new images of hand written digits). 
 
 
-It does this by gradually ***corrupting*** an image by adding **gaussian noise** to it. Over many timesteps , the image now losses all the information it once carried with it (things like , what it is? , where is it? etc.). What remains is a pure gaussian noise with mean = 0 and standard deviation = $\I$ . The model then is trained to predict what noise was added at each timestep and reverse the change. After many training runs the model , in a way learns to walk towards a clean image from pure noise. 
+It does this by gradually ***corrupting*** an image by adding **gaussian noise** to it. Over many timesteps , the image now losses all the information it once carried with it (things like , what it is? , where is it? etc.). What remains is a pure gaussian noise with mean = 0 and standard deviation = $I$ . The model then is trained to predict what noise was added at each timestep and reverse the change. After many training runs the model , in a way learns to walk towards a clean image from pure noise. 
 
 A demonstration of the forward diffusion process 
 
