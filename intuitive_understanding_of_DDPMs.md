@@ -39,20 +39,19 @@ Strictly speaking, reversing diffusion exactly is impossible because the process
 
 
 Start with a clean image , x0 at each timestep we add gaussian noise epsilon to the image . Here is how the image is transformed at the timestep t from t=0
-
-$\[
+$$
 \alpha_t = 1-\beta_t
 \qquad
 \bar{\alpha}_t = \prod_{k=1}^t \alpha_k
-\]
+$$
 
-\[
+$$
 x_t = \sqrt{\bar{\alpha}_t}x_0 + \sqrt{1-\bar{\alpha}_t}\epsilon
-\]
+$$
 
-\[
+$$
 q(x_t|x_{t-1}) = \mathcal{N}(x_t;\sqrt{\alpha_t}x_{t-1}, (1-\alpha_t)I)
-\]$
+$$
 
 
 the betas are the elements of the noise sequence , (which we decide before ). For example a linear noise schedule or cosine noise schedule. 
